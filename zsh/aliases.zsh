@@ -202,3 +202,9 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+
+# WP-CLI
+alias wpp='wp plugin'
+alias wpt='wp theme'
+alias wpi='wp plugin install'
+alias wti='wp theme install'
