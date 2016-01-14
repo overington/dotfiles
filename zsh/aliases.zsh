@@ -62,6 +62,14 @@ fi
 # mimic vim functions
 alias :q='exit'
 
+
+# TMUX Aliases
+
+
+alias tmuxa="tmux $_tmux_iterm_integration new-session -A"
+alias tmuxl='tmux list-sessions'
+alias txn='tmux new -s work'
+
 # vimrc editing
 alias ve='vim ~/.vimrc'
 
@@ -208,3 +216,6 @@ alias wpp='wp plugin'
 alias wpt='wp theme'
 alias wpi='wp plugin install'
 alias wti='wp theme install'
+
+# rsync
+alias esup-buddy='cd ~/.,,/ecostage.com/wp-content/plugins/; rsync --progress bp-custom.php ecostagepledge:~/public_html/wp-content/plugins/bp-custom.php'

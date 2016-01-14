@@ -115,3 +115,6 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+
+"markdown preview
+map <leader>md :Mm<CR>
