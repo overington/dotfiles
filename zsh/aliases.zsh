@@ -3,6 +3,9 @@
 # Don't change. The following determines where YADR is installed.
 yadr=$HOME/.yadr
 
+# Dir constants
+alias Sites='cd ~/Sites/'
+
 # Get operating system
 platform='unknown'
 unamestr=$(uname)
@@ -23,6 +26,9 @@ alias yip='yadr init-plugins'
 alias psa="ps aux"
 alias psg="ps aux | grep "
 alias psr='ps aux | grep ruby'
+
+# Makeing directorys
+alias mkd='mkdir '
 
 # Moving around
 alias cdb='cd -'
@@ -50,6 +56,8 @@ TRAPHUP() {
 
 alias ae='vim $yadr/zsh/aliases.zsh' #alias edit
 alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
+alias nde='vim $yadr/zsh/named-dirs.zsh' #named directorys edit
+alias ndr='source $yadr/zsh/named-dirs.zsh' #named directorys edit
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
 
 # vim using
@@ -64,7 +72,6 @@ alias :q='exit'
 
 
 # TMUX Aliases
-
 
 alias tmuxa="tmux $_tmux_iterm_integration new-session -A"
 alias tmuxl='tmux list-sessions'
@@ -219,3 +226,10 @@ alias wti='wp theme install'
 
 # rsync
 alias esup-buddy='cd ~/.,,/ecostage.com/wp-content/plugins/; rsync --progress bp-custom.php ecostagepledge:~/public_html/wp-content/plugins/bp-custom.php'
+alias rsa='rsync -a '
+
+
+# learnyounode
+alias lyn="learnyounode "
+alias lyv="learnyounode verify "
+alias lynn="learnyounode next"
