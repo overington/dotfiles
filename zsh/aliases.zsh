@@ -55,6 +55,7 @@ TRAPHUP() {
 }
 
 alias ae='vim $yadr/zsh/aliases.zsh' #alias edit
+alias de='vim $yadr/zsh/named-dirs.zsh' #named directories edit
 alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
 alias nde='vim $yadr/zsh/named-dirs.zsh' #named directorys edit
 alias ndr='source $yadr/zsh/named-dirs.zsh' #named directorys edit
@@ -228,6 +229,8 @@ alias wti='wp theme install'
 alias esup-buddy='cd ~/.,,/ecostage.com/wp-content/plugins/; rsync --progress bp-custom.php ecostagepledge:~/public_html/wp-content/plugins/bp-custom.php'
 alias rsa='rsync -a '
 
+# Copy currnet working directory
+alias ypwd='pwd | pbcopy '
 
 # learnyounode
 alias lyn="learnyounode "
