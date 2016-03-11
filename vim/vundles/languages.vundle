@@ -4,6 +4,7 @@ Bundle 'honza/vim-snippets'
 Bundle 'jtratner/vim-flavored-markdown.git'
 Bundle 'scrooloose/syntastic.git'
 Bundle 'nelstrom/vim-markdown-preview'
+Bundle 'StanAngeloff/php.vim'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle "dsawardekar/wordpress.vim"
 Bundle 'skwp/vim-html-escape'
