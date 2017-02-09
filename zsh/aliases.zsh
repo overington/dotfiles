@@ -225,14 +225,23 @@ alias wpt='wp theme'
 alias wpi='wp plugin install'
 alias wti='wp theme install'
 
+# SSH 
+alias se='vim ~/.yadr/zsh/ssh-aliases.zsh'
+
 # rsync
 alias esup-buddy='cd ~/.,,/ecostage.com/wp-content/plugins/; rsync --progress bp-custom.php ecostagepledge:~/public_html/wp-content/plugins/bp-custom.php'
 alias rsa='rsync -a '
+alias rsync-progress='rsync -vrlPtz --progress -e ssh'
+alias rsp='rsync -vrlPtz --progress -e ssh'
 
 # Copy currnet working directory
 alias ypwd='pwd | pbcopy '
+alias copypwd='ypwd'
 
 # learnyounode
 alias lyn="learnyounode "
 alias lyv="learnyounode verify "
 alias lynn="learnyounode next"
+
+# LearnC
+alias remake="rm ex1 && make ex1 "

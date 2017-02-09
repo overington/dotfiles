@@ -125,3 +125,5 @@
   enabled = true
 [include]
   path = .gitconfig.user
+[gui]
+	recentrepo = /Users/samuel/src/WordPress

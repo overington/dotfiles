@@ -14,10 +14,13 @@ endsnippet
 # HTML elements
 
 snippet script
-<script src='$1'></script>$0
+<script src='$1' type='${2:text/javascript}'></script>$0
 endsnippet
 snippet style
 <style src='$1'></style>$0
+endsnippet
+snippet style
+<link rel="stylesheet" href="${1:styles.css}">
 endsnippet
 snippet div
 <div${1: }>$0</div>

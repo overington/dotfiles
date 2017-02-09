@@ -1,12 +1,12 @@
-snippet br
-border-radius:$0
-endsnippet
-
+# Sass Specific snippets
 snippet +
 @include $0;
 endsnippet
 snippet ++
 @import '$0';
+endsnippet
+snippet +++
+@extend $0;
 endsnippet
 
 snippet mix
@@ -19,21 +19,110 @@ snippet &fs
 &::first-child {$1};$0
 endsnippet
 
-#
-# height and widths
+# CSS snippets
 
-snippet mh
-max-height: $0;
+# content display
+
+snippet d
+display: $0;
 endsnippet
 
+# flex options
+snippet ac
+align-content: ${0:flex-start};
+endsnippet
+# /* Pack lines from the cross-axis start */
+# align-content: flex-start;
 #
+# /* Pack lines to the cross-axis end */
+# align-content: flex-end;
+#
+# /* Pack lines around the cross-axis center */
+# align-content: center;
+#
+# /* Distribute lines along the cross-axis, start to end */
+# align-content: space-between;
+#
+# /* Distribute lines along the cross-axis, equally spaced */
+# align-content: space-around;
+#
+# /* Stretch lines to occupy the whole cross-axis */
+# align-content: stretch;
+#
+# /* Global values */
+# align-content: inherit;
+# align-content: initial;
+# align-content: unset;
+
+# height and widths
+
+
+snippet h
+height: ${0:100%};
+endsnippet
+snippet w
+width: ${0:100%};
+endsnippet
+snippet mxw
+max-width: ${0:100%};
+endsnippet
+snippet mnw
+min-width: ${0:50%};
+endsnippet
+snippet mxh
+max-height: ${0:100%};
+endsnippet
+snippet mnh
+min-height: ${0:50%};
+endsnippet
+snippet wf
+width: 100%;
+$0
+endsnippet
+snippet hf
+height: 100%;
+$0
+endsnippet
+
+# Positions
+
+snippet pos
+position: ${0:static:absolute}
+endsnippet
+snippet l
+left: $1;
+$0
+endsnippet
+snippet r
+right: $1;
+$0
+endsnippet
+snippet t
+top: $1;
+$0
+endsnippet
+snippet bot
+bottom: $1;
+$0
+endsnippet
+
+snippet fl
+float: ${1:left};$0
+endsnippet
+snippet fr
+float: right;$0
+endsnippet
+
+snippet zi
+z-index: $0;
+endsnippet
+
 # background options
 
 snippet bgc
 background-color: $0;
 endsnippet
 
-#
 # font and text
 
 snippet ta
@@ -51,6 +140,10 @@ font-weight: $0;
 endsnippet
 
 # padding
+
+snippet p
+padding: $0;
+endsnippet
 snippet pt
 padding-top: $0;
 endsnippet
@@ -63,8 +156,17 @@ endsnippet
 snippet pr
 padding-right: $0;
 endsnippet
+snippet plr
+padding-left: $1;
+padding-right: $1;$0
+endsnippet
 
 # margin
+
+
+snippet m
+margin: $0;
+endsnippet
 snippet mt
 margin-top: $0;
 endsnippet
@@ -76,4 +178,28 @@ margin-left: $0;
 endsnippet
 snippet mr
 margin-right: $0;
+endsnippet
+snippet mlr
+margin-left: $1;
+margin-right: $1;$0
+endsnippet
+
+# border
+snippet b
+border: $0;
+endsnippet
+snippet brad
+border-radius:$0;
+endsnippet
+
+# Mixins - only useful if they each particular plugin is installed
+snippet +bp
+@include breakpoint(${1:min-width} ${2:$size}) {
+	$3
+}${0:;}
+endsnippet
+snippet bp
+breakpoint(${1:min-width} ${2:$size}) {
+	$0
+}
 endsnippet
