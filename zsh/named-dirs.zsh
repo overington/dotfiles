@@ -1,5 +1,11 @@
+# General
 Work=/Users/samuel/Work
 Sites=/Users/samuel/Sites
+
+# Study
+Study=/Users/samuel/Documents/Study
+Phys=/Users/samuel/Documents/Study/Physics
+Chem=/Users/samuel/Documents/Study/Chemistry
 
 # Client sites
 ClientThemes=/Users/samuel/src/madeso/Client

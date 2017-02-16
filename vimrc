@@ -1,20 +1,55 @@
 " BASIC SETUP:
+" `k = keybindings
 
 " enter the current millenium
 set nocompatible
 
-" enable syntax and plugins (for netrw)
-syntax enable
-filetype plugin on
+" ================ Vundle ====================
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+source ~/.vim/plugins.vim
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+" "filetype plugin on
+" "
+" " Brief help
+" " :PluginList       - lists configured plugins
+" " :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" " :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+" "
+" " see :h vundle for more details or wiki for FAQ
+" " Put your non-Plugin stuff after this line
+
+" ================ General Config ====================
+
+set number                      "Line numbers are good
+set backspace=indent,eol,start  "Allow backspace in insert mode
+set history=1000                "Store lots of :cmdline history
+set showcmd                     "Show incomplete cmds down the bottom
+set showmode                    "Show current mode down the bottom
+set gcr=a:blinkon0              "Disable cursor blink
+set visualbell                  "No sounds
+syntax enable			"enable syntax and plugins (for netrw)
+filetype plugin on		"let vim figure out what type of file you're editing
+set hidden			"better http://items.sjbach.com/319/configuring-vim-right
+
+
+
+
 
 " FINDING FILES:
 
-" Search down into subfolders
-" Provides tab-completion for all file-related tasks
-set path+=**
+set path+=**			" Search down into subfolders
+				" Provides tab-completion for all file-related tasks
 
-" Display all matching files when we tab complete
-set wildmenu
+set wildmenu			" Display all matching files when we tab complete
 
 " NOW WE CAN:
 " - Hit tab to :find by partial match
@@ -37,6 +72,8 @@ command! MakeTags !ctags -R .
 " THINGS TO CONSIDER:
 " - This doesn't help if you want a visual list of tags
 
+" MAPPINGS:
+source ~/.yadr/vim/mappings.vim
 
 
 
@@ -78,7 +115,8 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " SNIPPETS:
 
 " Read an empty HTML template and move cursor to title
-nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
+" nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
+nnoremap ,html :-1read /Users/samuel/.yadr/vim/snippets<CR>3jwf>a
 
 " NOW WE CAN:
 " - Take over the world!
