@@ -9,3 +9,6 @@ nnoremap <leader>evp :e ~/.vim/plugins.vim<CR>	" edit plugins
 " ======= general ======
 nnoremap <leader>euse :UltiSnipsEdit<CR>
 nnoremap <leader>esae :e ~/.vim/my-snippets/all.snippets<CR>
+
+" ======= Plugins ======
+nnoremap <leader>yr :YcmForceCompileAndDiagnostics<CR>

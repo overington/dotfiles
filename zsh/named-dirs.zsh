@@ -18,6 +18,8 @@ Stillnessinyoga=/Users/samuel/Work/Stillnessinyoga/new_site
 # yinyogateachertraining.eu - local site
 WPytt=/Users/samuel/Work/Stillnessinyoga/sites/yin.dev
 
+# madeso.dev
+MadesoDev=/Users/samuel/Work/madeso.uk/madeso.uk
 
 
 # VCS Assist sites
@@ -46,6 +48,6 @@ BaseWP=/Users/samuel/Work/themes/base/base
 BaseGit=/Users/samuel/src/wp-themes/madeso-base.git
 
 # Folio.theme
-FolioDev=/Users/samuel/work/themes/made_folio/public_html
-FolioTheme=/Users/samuel/work/themes/made_folio/base
+FolioDev=/Users/samuel/Work/themes/made_folio/public_html
+FolioTheme=/Users/samuel/Work/themes/made_folio/base
 FolioGit=/Users/samuel/src/madeso/folio.git
