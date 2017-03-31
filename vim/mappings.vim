@@ -11,4 +11,7 @@ nnoremap <leader>euse :UltiSnipsEdit<CR>
 nnoremap <leader>esae :e ~/.vim/my-snippets/all.snippets<CR>
 
 " ======= Plugins ======
-nnoremap <leader>yr :YcmForceCompileAndDiagnostics<CR>
+" NERDTree
+nnoremap <leader><leader>` :NERDTreeToggle<CR>
+" SnipMate
+nnoremap <leader>sef :SnipMateOpenSnippetFiles<CR>
