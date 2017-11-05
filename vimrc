@@ -1,4 +1,4 @@
-" BASIC SETUP:
+" BASIC SETUP
 
 " enter the current millenium
 set nocompatible
@@ -8,49 +8,23 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
+" Add tlib to the runtime path to be able to open snippet files
+set rtp+=~/.vim/bundle/tlib_vim
+
 call vundle#begin()
-	source ~/.vim/plugins.vim
+if filereadable(expand("~/.vim/plugins.vim"))
+  source ~/.vim/plugins.vim
+endif
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" ================ General Config ====================
-set tabstop=2       " The width of a TAB is set to 4.
-                  " Still it is a \t. It is just that
-                  " Vim will interpret it to be having
-                  " a width of 4.
-set shiftwidth=2    " Indents will have a width of 4
-set softtabstop=2   " Sets the number of columns for a TAB
-set expandtab       " Expand TABs to spaces
-
-set number                      "Line numbers are good
-set relativenumber              "Line numbers are good
-set backspace=indent,eol,start  "Allow backspace in insert mode
-set history=1000                "Store lots of :cmdline history
-set showcmd                     "Show incomplete cmds down the bottom
-set showmode                    "Show current mode down the bottom
-set gcr=a:blinkon0              "Disable cursor blink
-set visualbell                  "No sounds
-syntax enable			"enable syntax and plugins (for netrw)
-set hidden			"better http://items.sjbach.com/319/configuring-vim-right
-
-
-" UltiSnip
-set rtp+=~/.vim/my-snippets/
-let g:UltiSnipsUsePythonVersion = 2
-let g:UltiSnipsSnippetsDir="~/.vim/my-snippets/"
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<c-y>"
-let g:UltiSnipsJumpForwardTrigger="<c-n>"
-let g:UltiSnipsJumpBackwardTrigger="<c-p>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-
-" ================ Key Mappings: ====================
-source ~/.yadr/vim/mappings.vim
-
-" ================ Macros: ====================
-source ~/.yadr/vim/macros.vim
+"
+" ================ General Settings: ====================
+"
+if filereadable(expand("~/.yadr/vim/settings.vim"))
+  source ~/.yadr/vim/settings.vim
+endif
 
 
 " FINDING FILES:
