@@ -161,6 +161,9 @@ alias c='rails c' # Rails 3
 alias co='script/console' # Rails 2
 alias cod='script/console --debugger'
 
+# Python
+alias py='python3'
+
 #If you want your thin to listen on a port for local VM development
 #export VM_IP=10.0.0.1 <-- your vm ip
 alias ts='thin start -a ${VM_IP:-127.0.0.1}'
@@ -245,3 +248,7 @@ alias lynn="learnyounode next"
 
 # LearnC
 alias remake="rm ex1 && make ex1 "
+
+# sleep timer
+alias sleept="zsh ~/src/sleep-timer.bash"
+

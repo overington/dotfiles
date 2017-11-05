@@ -1,11 +1,13 @@
 # General
 Work=/Users/samuel/Work
 Sites=/Users/samuel/Sites
+Vimd=/Users/samuel/.vim
+GetIplayer=/Users/samuel/Movies/get_iplayer
 
 # Study
 Study=/Users/samuel/Documents/Study
-Phys=/Users/samuel/Documents/Study/Physics
-Chem=/Users/samuel/Documents/Study/Chemistry
+Phys='/Users/samuel/Documents/Study/01-2017-18 Msci Theoretical Physics'
+PySrc='/Users/samuel/Documents/Study/01-2017-18 Msci Theoretical Physics/SPA4601 - PROFESSIONAL SKILLS FOR SCIENTISTS - 2017:18/src'
 
 # Client sites
 ClientThemes=/Users/samuel/src/madeso/Client
@@ -20,6 +22,9 @@ WPytt=/Users/samuel/Work/Stillnessinyoga/sites/yin.dev
 
 # madeso.dev
 MadesoDev=/Users/samuel/Work/madeso.uk/madeso.uk
+
+# luke.dev
+Luke=~Sites/luke.dev
 
 
 # VCS Assist sites
