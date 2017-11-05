@@ -1,0 +1,76 @@
+snippet <?
+	<?php ${2} ${1:?>}$0
+\endsnippet
+
+snippet >
+	=>$0
+\endsnippet
+
+
+snippet ar
+	array(${1:,})$0
+\endsnippet
+
+
+snippet f
+	function($1) {
+	$2
+	};$0
+\endsnippet
+
+snippet for
+	for (${1:$i = 1; $i <= 10; $i++}) {
+		${2:echo $i;}
+	}$0
+\endsnippet
+
+snippet fore
+	foreach ($${1:array} as ${2:$value}) {
+		echo "Value: ${2}<br />\n";
+	}
+\endsnippet
+
+snippet pf
+	printf(${1:string $format} ${2:[, mixed $args [, mixed $... ]]})$0
+\endsnippet
+
+snippet prr
+	print_r($${1:array}) $0
+\endsnippet
+
+
+snippet prot
+	protected function ${1:protected_function}() {
+		${2}
+	}$0
+\endsnippet
+
+
+snippet class
+	class ${1:MyClass} {
+		function __construct() { 
+			# $1 Constructor
+		}
+		
+		// property declaration
+		public $var = 'a default value';
+
+		// method declaration
+		public function displayVar() {
+				echo $this->var;
+		}
+	}
+	\$$1 = new $1();
+\endsnippet
+
+##
+# WordPress PHP snippets
+##
+snippet __
+	__('${1}');$0
+\endsnippet
+
+snippet adda
+	add_action( ${1:string \$tag}, ${2:callable \$function_to_add}, ${3:int \$priority = 10}, ${4:int \$accepted_args = 1});$0
+\endsnippet
+
