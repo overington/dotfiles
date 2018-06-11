@@ -6,8 +6,10 @@ GetIplayer=/Users/samuel/Movies/get_iplayer
 
 # Study
 Study=/Users/samuel/Documents/Study
-Phys='/Users/samuel/Documents/Study/01-2017-18 Msci Theoretical Physics'
-PySrc='/Users/samuel/Documents/Study/01-2017-18 Msci Theoretical Physics/SPA4601 - PROFESSIONAL SKILLS FOR SCIENTISTS - 2017:18/src'
+y1=~Study/2017-18\ Msci
+# /Users/samuel/Documents/Study/2017-18 Msci/Professional Skills for Scientists - SPA4601/src/group-project/
+Pysrc=~y1/Professional\ Skills\ for\ Scientists\ -\ SPA4601/src/
+Sympy=~/src/sympy
 
 # Client sites
 ClientThemes=/Users/samuel/src/madeso/Client
@@ -24,7 +26,7 @@ WPytt=/Users/samuel/Work/Stillnessinyoga/sites/yin.dev
 MadesoDev=/Users/samuel/Work/madeso.uk/madeso.uk
 
 # luke.dev
-Luke=~Sites/luke.dev
+Luke=~Sites/luke.test
 
 
 # VCS Assist sites

@@ -13,7 +13,6 @@ nnoremap <leader>evp :e ~/.vim/plugins.vim<CR>	" edit plugins
 
 " ======= general ======
 nnoremap <leader>esae :e ~/.vim/my-snippets/all.snippets<CR>
-nnoremap <leader>sef :SnipMateOpenSnippetFiles<CR>
 nnoremap <leader>sd :NERDTree ~/.yadr/vim/snippets/<CR>
 
 " nnoremap <leader>pp :!python3 %<CR> " run this file with python 3

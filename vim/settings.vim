@@ -29,18 +29,10 @@ let g:airline#extensions#tabline#enabled = 1 "Set the buffer tabline
 let vimsettings = '~/.vim/settings'
 let uname = system("uname -s")
 
-for fpath in split(globpath(vimsettings, '*.vim'), '\n')
-
-  if (fpath == expand(vimsettings) . "/yadr-keymap-mac.vim") && uname[:4] ==? "linux"
-    continue " skip mac mappings for linux
-  endif
-
-  if (fpath == expand(vimsettings) . "/yadr-keymap-linux.vim") && uname[:4] !=? "linux"
-    continue " skip linux mappings for mac
-  endif
-
-  exe 'source' fpath
-endfor
+" individual settings for plugis
+source ~/.vim/settings/python.vim
+source ~/.vim/settings/syntastic.vim
+source ~/.vim/settings/ultisnips.vim
 
 " NERDcommenter
 let NERDSpaceDelims=1
@@ -50,6 +42,11 @@ let NERDSpaceDelims=1
 "
 nnoremap K :bnext<CR>        " Navigate to next buffer
 nnoremap J :bprevious<CR>    " Navigate to next buffer
+
+" Folding
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
 
 
 "
@@ -67,3 +64,9 @@ if filereadable(expand("~/.yadr/vim/macros.vim"))
 endif
 
 
+" 
+" ================ Colorscheme: ====================
+"
+if filereadable(expand("~/.yadr/vim/setcolors.vim"))
+  source ~/.yadr/vim/setcolors.vim
+endif
