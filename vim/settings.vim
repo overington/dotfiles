@@ -18,7 +18,10 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 syntax enable			"enable syntax and plugins (for netrw)
 set hidden			"better http://items.sjbach.com/319/configuring-vim-right
-set pastetoggle=<F2>
+colorscheme seti
+
+
+
 
 
 "
@@ -31,7 +34,7 @@ let uname = system("uname -s")
 
 " individual settings for plugis
 source ~/.vim/settings/python.vim
-source ~/.vim/settings/syntastic.vim
+" source ~/.vim/settings/syntastic.vim
 source ~/.vim/settings/ultisnips.vim
 
 " NERDcommenter
@@ -47,6 +50,10 @@ nnoremap J :bprevious<CR>    " Navigate to next buffer
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 
 "

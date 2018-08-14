@@ -16,7 +16,7 @@ if v:version < 700 || exists('loaded_setcolors') || &cp
 endif
 
 let loaded_setcolors = 6
-let s:mycolors = ['slate', 'torte', 'darkblue', 'delek', 'murphy', 'elflord', 'pablo', 'koehler']  " colorscheme names that we use to set color
+let s:mycolors = ['seti', 'slate', 'torte', 'darkblue', 'delek', 'murphy', 'elflord', 'pablo', 'koehler']  " colorscheme names that we use to set color
 
 " Set list of color scheme names that we will use, except
 " argument 'now' actually changes the current color scheme.
@@ -94,9 +94,9 @@ function! s:NextColor(how, echo_color)
   endif
 endfunction
 
-nnoremap <F8> :call NextColor(1)<CR>
-nnoremap <A-F8> :call NextColor(-1)<CR>
-nnoremap <A-S-F8> :call NextColor(0)<CR>
+nnoremap } :call NextColor(1)<CR>
+nnoremap { :call NextColor(-1)<CR>
+nnoremap P :call NextColor(0)<CR>
 
 " Set color scheme according to current time of day.
 function! s:HourColor()

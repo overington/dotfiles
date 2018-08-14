@@ -282,6 +282,9 @@ snippet in
 snippet pr
 	print(${1:var})$0
 
+snippet prs
+	print("${1:str}"$2)$0
+
 snippet pv
 	print('$1 :', ${1:var})$0
 
@@ -289,8 +292,11 @@ snippet ptv
 	if test  == True:
 		print('$1 :', ${1:var})
 	$0
-snippet pr(
-	print($0
 
 snippet ty
 	type(${1:object})${0}
+
+snippet openfile
+	with open("${1:data_file.json}", "r") as ${2:read_file}:
+	${3:json.load($2.read())} 
+

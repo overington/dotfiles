@@ -6,9 +6,12 @@ Plugin 'tpope/vim-fugitive'	      " Git on fire
 
 Plugin 'python-mode/python-mode'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'Rykka/riv.vim'
 Plugin 'godlygeek/tabular'
 
-Plugin 'vim-syntastic/syntastic'
+Plugin 'trusktr/seti.vim'
+
+" Plugin 'vim-syntastic/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 " Plugin 'tpope/vim-markdown'
 
@@ -23,7 +26,9 @@ Plugin 'Valloric/YouCompleteMe'	" YouCompleteMe
 Plugin 'Vimball'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
+Plugin 'junegunn/goyo.vim'
 
+Plugin 'mileszs/ack.vim'
 
 
 " ====== Navigation ======
