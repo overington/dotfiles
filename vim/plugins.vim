@@ -6,7 +6,7 @@ Plugin 'tpope/vim-fugitive'	      " Git on fire
 
 Plugin 'python-mode/python-mode'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'Rykka/riv.vim'
+Plugin 'Rykka/riv.vim'            " source code Sphynx
 Plugin 'godlygeek/tabular'
 
 Plugin 'trusktr/seti.vim'
@@ -33,10 +33,12 @@ Plugin 'mileszs/ack.vim'
 
 " ====== Navigation ======
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'  " Show git status in NERDtree file browser
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Yggdroot/indentLine'  " Line indentation
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'ctrlpvim/ctrlp.vim'
 " Plugin 'vim-scripts/indentpython.vim'
 
 Plugin 'rizzatti/dash.vim'    " Dash code checkup

@@ -32,7 +32,7 @@ let g:airline#extensions#tabline#enabled = 1 "Set the buffer tabline
 let vimsettings = '~/.vim/settings'
 let uname = system("uname -s")
 
-" individual settings for plugis
+" individual settings for plugins
 source ~/.vim/settings/python.vim
 " source ~/.vim/settings/syntastic.vim
 source ~/.vim/settings/ultisnips.vim

@@ -15,24 +15,25 @@ nnoremap <leader>< :bprevious<CR>
 "
 
 " ======= vimrc files ======
-nnoremap <leader>evr :e ~/.vimrc<CR> " edit vimrc
-nnoremap <leader>evm :e ~/.vim/mappings.vim<CR>	" edit This file
-nnoremap <leader>ev+ :e ~/.vim/macros.vim<CR>	" edit This file
+nnoremap <leader>evrc :e ~/.vimrc<CR> " edit vimrc
+nnoremap <leader>evma :e ~/.vim/mappings.vim<CR>	" edit This file
+nnoremap <leader>evmx :e ~/.vim/macros.vim<CR>	" edit Macros
 nnoremap <leader>evs :e ~/.vim/settings.vim<CR>	" edit Settings
+nnoremap <leader>evpl :e ~/.vim/plugins.vim<CR>	" edit Plugins
 nnoremap <leader>evpy :e ~/.vim/settings/python.vim<CR>	" edit python
 
 
 " ======= general ======
 nnoremap <leader>esae :e ~/.vim/my-snippets/all.snippets<CR>
-nnoremap <leader>sd :NERDTree ~/.yadr/vim/snippets/<CR>
-
 
 
 " ======= Plugins ======
 " NERDTree
 nnoremap <leader>` :NERDTreeFind <CR>
 nnoremap <leader>§ :NERDTreeFind <CR>
+nnoremap <leader>nf :NERDTreeFind <CR>
 nnoremap <leader>z :NERDTreeToggle <CR>
+nnoremap <leader>sd :NERDTree ~/.yadr/vim/snippets/<CR>
 
 
 

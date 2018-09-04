@@ -12,3 +12,10 @@ nnoremap <leader>do :diffoff<CR>
 vnoremap <c-o> :diffput<CR>
 vnoremap <c-i> :diffget<CR>
 nnoremap <leader>du :diffupdate<CR>
+
+function! CopyFilePath()
+  return resolve(expand("%:p"))
+endfunction
+
+nnoremap <leader>yf :let @+ = CopyFilePath() <CR>
+

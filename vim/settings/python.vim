@@ -1,5 +1,4 @@
 " let pyout = '/dev/ttys003'
-" " :echo "the value of 'shell' is" &shell
 " nnoremap <leader>pp :!python3 % >> &pyout<CR> " run this file with python 3 and return the value into pyout
 " *:PymodeLint* -- Check code in current buffer
 " *:PymodeLintToggle* -- Toggle code checking
@@ -16,9 +15,6 @@ let g:pymode_virtualenv = 1
 
 " Mappings
 
-let pyout = '/dev/ttys003'
-" :echo "the value of 'shell' is" &shell
-
 
 " https://stackoverflow.com/questions/28057115/vim-python-mode-vertical-windows#28057292
 " i create an autocommand which will automatically move the window to the
@@ -34,7 +30,7 @@ autocmd BufEnter __run__,__doc__ :wincmd L
 
 nnoremap <leader><leader>pl# :PymodeLint <CR>
 nnoremap <leader><leader>py# :PymodeRun <CR>
-noremap <leader># :PymodeRun <CR>
+nnoremap <leader># :PymodeRun <CR>
 " nnoremap <leader>pp :!python3 %<CR> " run this file with python 3
 
 nnoremap <leader><leader>w :PymodeLintToggle <CR> :w <CR> :PymodeLintToggle <CR>

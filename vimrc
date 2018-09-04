@@ -20,11 +20,6 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 "
-" ================ General Settings: ====================
-"
-if filereadable(expand("~/.yadr/vim/settings.vim"))
-  source ~/.yadr/vim/settings.vim
-endif
 
 
 " FINDING FILES:
@@ -144,3 +139,9 @@ set makeprg=bundle\ exec\ rspec\ -f\ QuickfixFormatter
 "                     - Internal Training
 "                       - Encouragement
 
+
+" ================ General Settings: ====================
+"
+if filereadable(expand("~/.yadr/vim/settings.vim"))
+  source ~/.yadr/vim/settings.vim
+endif
