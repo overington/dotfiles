@@ -20,7 +20,7 @@ Still=/Users/samuel/Work/Stillnessinyoga
 Stillnessinyoga=/Users/samuel/Work/Stillnessinyoga/new_site
 
 # yinyogateachertraining.eu - local site
-WPytt=/Users/samuel/Work/Stillnessinyoga/sites/yin.dev
+stillnessinyogatest=/Users/samuel/Work/Stillnessinyoga/sites/stillnessinyoga.test
 
 # madeso.dev
 MadesoDev=/Users/samuel/Work/madeso.uk/madeso.uk
