@@ -5,6 +5,9 @@
 nnoremap <leader>> :bnext<CR>
 nnoremap <leader>< :bprevious<CR>
 
+
+set pastetoggle=<leader>pt
+
 " ======= vimrc files ======
 nnoremap <leader>evr :e ~/.vimrc<CR> " edit vimrc
 nnoremap <leader>evm :e ~/.vim/mappings.vim<CR>	" edit This file

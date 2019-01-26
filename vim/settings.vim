@@ -18,7 +18,6 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 syntax enable			"enable syntax and plugins (for netrw)
 set hidden			"better http://items.sjbach.com/319/configuring-vim-right
-set pastetoggle=<F2>
 
 
 "
@@ -33,6 +32,7 @@ let uname = system("uname -s")
 source ~/.vim/settings/python.vim
 source ~/.vim/settings/syntastic.vim
 source ~/.vim/settings/ultisnips.vim
+source ~/.vim/settings/ack.vim
 
 " NERDcommenter
 let NERDSpaceDelims=1
