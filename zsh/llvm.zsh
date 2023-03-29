@@ -1,0 +1,13 @@
+# To use the bundled libc++ please add the following LDFLAGS:
+LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+
+# llvm is keg-only, which means it was not symlinked into /usr/local,
+# because macOS already provides this software and installing another version in
+# parallel can cause all kinds of trouble.
+
+# add it to the PATH (done)
+# echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.zshrc
+
+# For compilers to find llvm you may need to set:
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"

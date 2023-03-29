@@ -5,3 +5,6 @@ path=(
   $HOME/.yadr/bin/yadr
 )
 
+export PATH="${PATH}:${HOME}/.local/bin/"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH" # For C++ language server clangd

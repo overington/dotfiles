@@ -1,3 +1,5 @@
+# vim:ft=zsh ts=2 sw=2 sts=2
+#
 #
 # A theme based on Steve Losh's Extravagant Prompt with vcs_info integration.
 #

@@ -2,3 +2,6 @@
 	path = zsh/prezto
 	url = https://github.com/sorin-ionescu/prezto.git
   ignore = dirty
+[submodule "zsh/zsh-nvm"]
+	path = zsh/zsh-nvm
+	url = git@github.com:lukechilds/zsh-nvm.git

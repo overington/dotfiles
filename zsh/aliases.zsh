@@ -54,10 +54,10 @@ TRAPHUP() {
   source $yadr/zsh/aliases.zsh
 }
 
-alias ae='vim $yadr/zsh/aliases.zsh' #alias edit
-alias de='vim $yadr/zsh/named-dirs.zsh' #named directories edit
+alias ae='nvim $yadr/zsh/aliases.zsh' #alias edit
+alias de='nvim $yadr/zsh/named-dirs.zsh' #named directories edit
 alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
-alias nde='vim $yadr/zsh/named-dirs.zsh' #named directorys edit
+alias nde='nvim $yadr/zsh/named-dirs.zsh' #named directorys edit
 alias ndr='source $yadr/zsh/named-dirs.zsh' #named directorys edit
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
 
@@ -80,9 +80,10 @@ alias txn='tmux new -s work'
 
 # vimrc editing
 alias ve='vim ~/.vimrc'
+alias nve='nvim ~/.config/nvim/init.vim'
 
 # zsh profile editing
-alias ze='vim ~/.zshrc'
+alias ze='nvim ~/.zshrc'
 alias zr='source ~/.zshrc'
 
 # Git Aliases
@@ -152,24 +153,18 @@ alias l='less'
 alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
 alias cl='clear'
+alias cls='export HISTFILE=false; exit'
 
 # Zippin
 alias gz='tar -zcvf'
 
-# Ruby
-alias c='rails c' # Rails 3
-alias co='script/console' # Rails 2
-alias cod='script/console --debugger'
+# Pandoc
+alias html2md='pbpaste | pandoc --from html --to markdown | pbcopy '
 
 # Python
-alias py='python3'
-
-#If you want your thin to listen on a port for local VM development
-#export VM_IP=10.0.0.1 <-- your vm ip
-alias ts='thin start -a ${VM_IP:-127.0.0.1}'
-alias ms='mongrel_rails start'
-alias tfdl='tail -f log/development.log'
-alias tftl='tail -f log/test.log'
+alias pipr='pip install -r requirements.txt '
+alias pydl='python3 ~/src/py/py-downloader-script/download_files.py '
+alias pa='pyenv activate '
 
 alias ka9='killall -9'
 alias k9='kill -9'
@@ -228,11 +223,17 @@ alias wpt='wp theme'
 alias wpi='wp plugin install'
 alias wti='wp theme install'
 
+# python / virtualenv
+# alias refresh
+
 # SSH 
-alias se='vim ~/.yadr/zsh/ssh-aliases.zsh'
+alias se='nvim ~/.yadr/zsh/ssh-aliases.zsh'
+
+# Docker
+alias dr='docker '
+alias dc='docker-compose '
 
 # rsync
-alias esup-buddy='cd ~/.,,/ecostage.com/wp-content/plugins/; rsync --progress bp-custom.php ecostagepledge:~/public_html/wp-content/plugins/bp-custom.php'
 alias rsa='rsync -a '
 alias rsync-progress='rsync -vrlPtz --progress -e ssh'
 alias rsp='rsync -vrlPtz --progress -e ssh'
@@ -241,14 +242,14 @@ alias rsp='rsync -vrlPtz --progress -e ssh'
 alias ypwd='pwd | pbcopy '
 alias copypwd='ypwd'
 
-# learnyounode
-alias lyn="learnyounode "
-alias lyv="learnyounode verify "
-alias lynn="learnyounode next"
-
-# LearnC
-alias remake="rm ex1 && make ex1 "
+# check gym:
+alias gym="(workon pyprojs; python ~Devices/2019-20/notebooks/pygymchecker.py)"
+# Neovim
+alias nvims="nvim -S session.vim"
 
 # sleep timer
 alias sleept="zsh ~/src/sleep-timer.bash"
+alias calc="python ~/src/roundup_calculator.py "
 
+# Giflooper
+alias gifloop="sh /Users/samuel/src/gifloop/gifloop.sh "
